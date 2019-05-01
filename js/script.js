@@ -6,3 +6,4 @@ function menuIcon() {
     x.className = "nav";
   }
 }
+
