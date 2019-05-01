@@ -110,6 +110,7 @@ header, footer {
 #moto {
 	max-width: 2800px;
 	margin: 0px auto;
+	background: rgba(28, 28, 28,0.63);
 	.moto-container {
 		position: relative;
 		//height: 500px;
@@ -118,6 +119,9 @@ header, footer {
 		background-size: 100% auto;
 		background-repeat: no-repeat;
 		background-position: center;
+		.transp {
+			background: rgba(28, 28, 28, 0.63);
+		
 		/*&:before {
 			position: absolute;
 			content: "";
@@ -138,9 +142,21 @@ header, footer {
 					width: 247px;
 					height: 108px;
 				}
-				h1 {font-size: 36px;}
+				h1 {
+					font-size: 36px;
+					margin-bottom: 67px;
+				}
 				p {
 					font-size: 16px;
+					position: relative;
+					&:before {
+						position: absolute;
+						top: -24px;
+						content: "";
+						width: 80px;
+						height: 2px;
+						background-color: #ffffff;
+					}
 				}
 				.button {
 					display: inline-block;
@@ -156,6 +172,8 @@ header, footer {
 				color: #000000;
 				overflow: hidden;
 				max-width: 360px;
+				min-width: 300px;
+				margin-left: 40px;
 				h2 {
 					background-color: #f5f5f5;
 					text-align: center;
@@ -227,6 +245,7 @@ header, footer {
 					font-weight: bold;
 				}
 			}
+		}
 		}
 	}
 	.moto-footer {

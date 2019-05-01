@@ -130,6 +130,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 #moto {
   max-width: 2800px;
   margin: 0px auto;
+  background: rgba(28, 28, 28, 0.63);
 }
 
 #moto .moto-container {
@@ -139,6 +140,10 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#moto .moto-container .transp {
+  background: rgba(28, 28, 28, 0.63);
   /*&:before {
 			position: absolute;
 			content: "";
@@ -149,46 +154,59 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 		}*/
 }
 
-#moto .moto-container .container {
+#moto .moto-container .transp .container {
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
-#moto .moto-container .container .moto-container-text {
+#moto .moto-container .transp .container .moto-container-text {
   max-width: 650px;
 }
 
-#moto .moto-container .container .moto-container-text .moto-logo {
+#moto .moto-container .transp .container .moto-container-text .moto-logo {
   background-image: url("../image/cheshire-county-hygiene-services (1).svg");
   background-size: cover;
   width: 247px;
   height: 108px;
 }
 
-#moto .moto-container .container .moto-container-text h1 {
+#moto .moto-container .transp .container .moto-container-text h1 {
   font-size: 36px;
+  margin-bottom: 67px;
 }
 
-#moto .moto-container .container .moto-container-text p {
+#moto .moto-container .transp .container .moto-container-text p {
   font-size: 16px;
+  position: relative;
 }
 
-#moto .moto-container .container .moto-container-text .button {
+#moto .moto-container .transp .container .moto-container-text p:before {
+  position: absolute;
+  top: -24px;
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+#moto .moto-container .transp .container .moto-container-text .button {
   display: inline-block;
   padding: 10px;
   font-size: 16px;
   border: 2px solid #ffffff;
 }
 
-#moto .moto-container .container .moto-container-form {
+#moto .moto-container .transp .container .moto-container-form {
   background-color: white;
   border-radius: 3px;
   color: #000000;
   overflow: hidden;
   max-width: 360px;
+  min-width: 300px;
+  margin-left: 40px;
 }
 
-#moto .moto-container .container .moto-container-form h2 {
+#moto .moto-container .transp .container .moto-container-form h2 {
   background-color: #f5f5f5;
   text-align: center;
   font-size: 20px;
@@ -196,48 +214,48 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   padding: 17px;
 }
 
-#moto .moto-container .container .moto-container-form h2 span {
+#moto .moto-container .transp .container .moto-container-form h2 span {
   color: #e27866;
 }
 
-#moto .moto-container .container .moto-container-form form {
+#moto .moto-container .transp .container .moto-container-form form {
   margin: 30px 58px;
 }
 
-#moto .moto-container .container .moto-container-form form p {
+#moto .moto-container .transp .container .moto-container-form form p {
   font-size: 16px;
   font-weight: bold;
   color: #1c1c1c;
 }
 
-#moto .moto-container .container .moto-container-form form input[type="text"], #moto .moto-container .container .moto-container-form form input[type="tel"] {
+#moto .moto-container .transp .container .moto-container-form form input[type="text"], #moto .moto-container .transp .container .moto-container-form form input[type="tel"] {
   border: none;
   border-bottom: 1px solid #d8d8d8;
   width: 100%;
 }
 
-#moto .moto-container .container .moto-container-form form input[type="text"] {
+#moto .moto-container .transp .container .moto-container-form form input[type="text"] {
   margin-bottom: 34px;
 }
 
-#moto .moto-container .container .moto-container-form form .customRadio {
+#moto .moto-container .transp .container .moto-container-form form .customRadio {
   position: relative;
   cursor: pointer;
   padding-left: 22px;
   font-size: 9px;
 }
 
-#moto .moto-container .container .moto-container-form form .customRadio input {
+#moto .moto-container .transp .container .moto-container-form form .customRadio input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-#moto .moto-container .container .moto-container-form form .customRadio input:checked ~ .checkmark:after {
+#moto .moto-container .transp .container .moto-container-form form .customRadio input:checked ~ .checkmark:after {
   display: block;
 }
 
-#moto .moto-container .container .moto-container-form form .customRadio .checkmark {
+#moto .moto-container .transp .container .moto-container-form form .customRadio .checkmark {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -247,7 +265,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   border-radius: 50%;
 }
 
-#moto .moto-container .container .moto-container-form form .customRadio .checkmark:after {
+#moto .moto-container .transp .container .moto-container-form form .customRadio .checkmark:after {
   content: "";
   position: absolute;
   display: none;
@@ -259,11 +277,11 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   background: #41d395;
 }
 
-#moto .moto-container .container .moto-container-form form .customRadio:not(last-child) {
+#moto .moto-container .transp .container .moto-container-form form .customRadio:not(last-child) {
   padding-right: 22px;
 }
 
-#moto .moto-container .container .moto-container-form .button {
+#moto .moto-container .transp .container .moto-container-form .button {
   background-color: #41d395;
   color: #ffffff;
   text-align: center;
