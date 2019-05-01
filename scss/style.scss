@@ -1,0 +1,119 @@
+body {
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header, footer {
+	max-width: 100%;
+	background-color: #1c1c1c;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0px auto;
+		max-width: 1100px;
+		@media only screen and (max-width : 1152px) {
+			margin: 0px 26px;
+		}
+		.logo {
+			background-image: url('../image/cheshire-county-hygiene-services.svg');
+			background-size: cover;
+			width: 119px;
+			height: 52px;
+		}
+		.icon {
+			display: none;
+			margin: 0px;
+			order: 0;
+			img {
+					width: 13px;
+					height: 13px;
+			}
+			@media only screen and (max-width : 676px) {
+				display: block;
+				margin: 26px 0px 26px 44px;
+			}
+		}
+		.nav {
+			margin: 0px;
+			padding: 0px;
+			display: inline-block;
+			@media only screen and (max-width : 676px) {
+					position: absolute;
+					top: 71px;
+					left: 0px;
+					background-color: #1c1c1c;
+					width: 100%;
+					display: none;
+				}
+			li {
+				display: inline-block;
+				margin: 26px 0px 26px 44px;
+				position: relative;
+				@media only screen and (max-width : 676px) {
+					display: block;
+					margin: 26px 0px 26px 44px;
+				}
+				a {
+					text-decoration: none;
+					color: #ffffff;
+					opacity: 0.69;
+					font-size: 14px;
+				}
+				&:hover:after {
+					content: "";
+					position: absolute;
+					background-color: #e27866;
+					width: 100%;
+					height: 2px;
+					right: 0px;
+					bottom: -26px;
+				}
+				&:hover a {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.container {
+	.social {
+		height: 71px;
+		display: flex;
+		align-items: center;
+		a {
+		padding-right: 118px;
+		@media only screen and (max-width : 1152px) {
+			padding-right: 60px;
+		}
+		@media only screen and (max-width : 676px) {
+			padding-right: 20px;
+		}
+			&:last-child {
+			padding-right: 0px;
+			}
+			img {
+				height: 20px;
+			}
+		}
+	}
+	p {
+		color: #ffffff;
+		opacity: 0.5;
+		font-size: 18px;
+	}
+}
+
+
+
+.phoneMenu {
+	display: inline-block;
+}
+
+@media only screen and (max-width : 676px) {
+				.nav.phineMenu {
+					display: inline-block;
+				}
+
+}

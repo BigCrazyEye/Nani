@@ -1,0 +1,157 @@
+body {
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header, footer {
+  max-width: 100%;
+  background-color: #1c1c1c;
+}
+
+header .container, footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0px auto;
+  max-width: 1100px;
+}
+
+@media only screen and (max-width: 1152px) {
+  header .container, footer .container {
+    margin: 0px 26px;
+  }
+}
+
+header .container .logo, footer .container .logo {
+  background-image: url("../image/cheshire-county-hygiene-services.svg");
+  background-size: cover;
+  width: 119px;
+  height: 52px;
+}
+
+header .container .icon, footer .container .icon {
+  display: none;
+  margin: 0px;
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+header .container .icon img, footer .container .icon img {
+  width: 13px;
+  height: 13px;
+}
+
+@media only screen and (max-width: 676px) {
+  header .container .icon, footer .container .icon {
+    display: block;
+    margin: 26px 0px 26px 44px;
+  }
+}
+
+header .container .nav, footer .container .nav {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 676px) {
+  header .container .nav, footer .container .nav {
+    position: absolute;
+    top: 71px;
+    left: 0px;
+    background-color: #1c1c1c;
+    width: 100%;
+    display: none;
+  }
+}
+
+header .container .nav li, footer .container .nav li {
+  display: inline-block;
+  margin: 26px 0px 26px 44px;
+  position: relative;
+}
+
+@media only screen and (max-width: 676px) {
+  header .container .nav li, footer .container .nav li {
+    display: block;
+    margin: 26px 0px 26px 44px;
+  }
+}
+
+header .container .nav li a, footer .container .nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.69;
+  font-size: 14px;
+}
+
+header .container .nav li:hover:after, footer .container .nav li:hover:after {
+  content: "";
+  position: absolute;
+  background-color: #e27866;
+  width: 100%;
+  height: 2px;
+  right: 0px;
+  bottom: -26px;
+}
+
+header .container .nav li:hover a, footer .container .nav li:hover a {
+  opacity: 1;
+}
+
+.container .social {
+  height: 71px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container .social a {
+  padding-right: 118px;
+}
+
+@media only screen and (max-width: 1152px) {
+  .container .social a {
+    padding-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 676px) {
+  .container .social a {
+    padding-right: 20px;
+  }
+}
+
+.container .social a:last-child {
+  padding-right: 0px;
+}
+
+.container .social a img {
+  height: 20px;
+}
+
+.container p {
+  color: #ffffff;
+  opacity: 0.5;
+  font-size: 18px;
+}
+
+.phoneMenu {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 676px) {
+  .nav.phineMenu {
+    display: inline-block;
+  }
+}
