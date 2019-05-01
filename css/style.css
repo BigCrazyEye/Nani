@@ -58,7 +58,6 @@ header .container .icon img, footer .container .icon img {
 header .container .nav, footer .container .nav {
   margin: 0px;
   padding: 0px;
-  display: inline-block;
 }
 
 @media only screen and (max-width: 676px) {
@@ -68,7 +67,6 @@ header .container .nav, footer .container .nav {
     left: 0px;
     background-color: #1c1c1c;
     width: 100%;
-    display: none;
   }
 }
 
@@ -80,7 +78,7 @@ header .container .nav li, footer .container .nav li {
 
 @media only screen and (max-width: 676px) {
   header .container .nav li, footer .container .nav li {
-    display: block;
+    display: none;
     margin: 26px 0px 26px 44px;
   }
 }
@@ -104,6 +102,12 @@ header .container .nav li:hover:after, footer .container .nav li:hover:after {
 
 header .container .nav li:hover a, footer .container .nav li:hover a {
   opacity: 1;
+}
+
+@media only screen and (max-width: 676px) {
+  .nav.phoneMenu li {
+    display: block;
+  }
 }
 
 .container .social {
@@ -146,12 +150,6 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   font-size: 18px;
 }
 
-.phoneMenu {
-  display: inline-block;
-}
-
-@media only screen and (max-width: 676px) {
-  .nav.phineMenu {
-    display: inline-block;
-  }
+footer {
+  display: none;
 }
