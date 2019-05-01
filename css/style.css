@@ -117,13 +117,15 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 @media only screen and (max-width: 690px) {
   .nav.phoneMenu {
     z-index: 1;
-    top: 71px;
+    top: 70px;
     left: 0px;
     width: 100%;
+    min-width: 400px;
     background-color: #1c1c1c;
   }
   .nav.phoneMenu li {
     display: block;
+    margin: 26px 0px;
   }
 }
 
@@ -142,21 +144,28 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   background-position: center;
 }
 
+@media only screen and (max-width: 918px) {
+  #moto .moto-container {
+    background-size: auto 100%;
+  }
+}
+
 #moto .moto-container .transp {
   background: rgba(28, 28, 28, 0.63);
-  /*&:before {
-			position: absolute;
-			content: "";
-			opacity: 0.63;
-			background-color: #1c1c1c;
-			width: 100%;
-			height: 100%;
-		}*/
 }
 
 #moto .moto-container .transp .container {
   padding-top: 90px;
   padding-bottom: 90px;
+}
+
+@media only screen and (max-width: 690px) {
+  #moto .moto-container .transp .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 #moto .moto-container .transp .container .moto-container-text {
@@ -194,6 +203,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   padding: 10px;
   font-size: 16px;
   border: 2px solid #ffffff;
+  cursor: pointer;
 }
 
 #moto .moto-container .transp .container .moto-container-form {
@@ -204,6 +214,13 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   max-width: 360px;
   min-width: 300px;
   margin-left: 40px;
+}
+
+@media only screen and (max-width: 690px) {
+  #moto .moto-container .transp .container .moto-container-form {
+    margin-top: 60px;
+    margin-left: 0px;
+  }
 }
 
 #moto .moto-container .transp .container .moto-container-form h2 {
@@ -234,8 +251,8 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   width: 100%;
 }
 
-#moto .moto-container .transp .container .moto-container-form form input[type="text"] {
-  margin-bottom: 34px;
+#moto .moto-container .transp .container .moto-container-form form input:not(:first-of-type) {
+  margin-top: 34px;
 }
 
 #moto .moto-container .transp .container .moto-container-form form .customRadio {
@@ -289,6 +306,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   margin: 0px;
   padding: 17px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #moto .moto-footer {
@@ -299,8 +317,23 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   padding: 19px 0px;
 }
 
+@media only screen and (max-width: 690px) {
+  #moto .moto-footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
 #moto .moto-footer .container .moto-footer-text {
   max-width: 400px;
+}
+
+@media only screen and (max-width: 690px) {
+  #moto .moto-footer .container .moto-footer-text {
+    text-align: center;
+  }
 }
 
 #moto .moto-footer .container .moto-footer-text h3 {
@@ -327,6 +360,13 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   align-items: center;
 }
 
+@media only screen and (max-width: 690px) {
+  .social {
+    height: auto;
+    margin-top: 18px;
+  }
+}
+
 .social a {
   padding-right: 118px;
 }
@@ -349,6 +389,15 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 
 .social a img {
   height: 20px;
+}
+
+@media only screen and (max-width: 690px) {
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 footer .container p {
@@ -376,4 +425,8 @@ footer .container p {
   .container {
     margin: 0px 26px;
   }
+}
+
+.active {
+  font-weight: bold;
 }
