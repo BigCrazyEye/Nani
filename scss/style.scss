@@ -6,6 +6,7 @@ body {
 header, footer {
 	max-width: 100%;
 	background-color: #1c1c1c;
+	
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -15,43 +16,45 @@ header, footer {
 		@media only screen and (max-width : 1152px) {
 			margin: 0px 26px;
 		}
+		
 		.logo {
 			background-image: url('../image/cheshire-county-hygiene-services.svg');
 			background-size: cover;
 			width: 119px;
 			height: 52px;
 		}
+		
 		.icon {
 			display: none;
 			margin: 0px;
-			order: 0;
-			img {
-					width: 13px;
-					height: 13px;
-			}
+			order: 1;
 			@media only screen and (max-width : 676px) {
 				display: block;
 				margin: 26px 0px 26px 44px;
 			}
+			img {
+					width: 13px;
+					height: 13px;
+			}
+			
 		}
+		
 		.nav {
 			margin: 0px;
 			padding: 0px;
 			@media only screen and (max-width : 676px) {
 					position: absolute;
-					top: 71px;
-					left: 0px;
 					background-color: #1c1c1c;
-					width: 100%;
 				}
-			li {
+			li {/*
 				display: inline-block;
 				margin: 26px 0px 26px 44px;
 				position: relative;
+				text-align: center;
 				@media only screen and (max-width : 676px) {
 					display: none;
-					margin: 26px 0px 26px 44px;
-				}
+				}*/
+				
 				a {
 					text-decoration: none;
 					color: #ffffff;
@@ -75,10 +78,30 @@ header, footer {
 	}
 }
 
+
+.container .nav li {
+  display: inline-block;
+  margin: 26px 0px 26px 44px;
+  position: relative;
+  text-align: center;
+}
+
+@media only screen and (max-width: 676px) {
+   .container .nav li {
+    display: none;
+  }
+}
 @media only screen and (max-width : 676px) {
-				.nav.phoneMenu li{
-					display: block;
-				}
+	.nav.phoneMenu {
+		z-index: 1;
+		top: 71px;
+		left: 0px;
+		width: 100%;
+		background-color: #1c1c1c;
+	}
+	.nav.phoneMenu li {
+		display: block;
+	}
 
 }
 
@@ -109,5 +132,5 @@ header, footer {
 		font-size: 18px;
 	}
 }
-footer {display: none;}
+
 
