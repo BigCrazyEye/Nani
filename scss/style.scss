@@ -331,8 +331,11 @@ header, footer {
 					.tab-content-right {
 						width: 362px;
 						height: 366px;
-						background-color: red;
+						//background-color: red;
 						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						align-items: center;
 					}
 				}
 			}

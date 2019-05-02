@@ -418,10 +418,17 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 #explore .explore-container .transp .container .tab-content .tab-content-right {
   width: 362px;
   height: 366px;
-  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #registerLeft {
