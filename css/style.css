@@ -132,7 +132,6 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 #moto {
   max-width: 2800px;
   margin: 0px auto;
-  background: rgba(28, 28, 28, 0.63);
 }
 
 #moto .moto-container {
@@ -350,6 +349,131 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   margin: 0px;
 }
 
+#explore {
+  max-width: 2800px;
+  margin: 0px auto;
+}
+
+#explore .explore-container {
+  position: relative;
+  width: 100%;
+  background-image: url("../image/christoffer-engstrom-503481-unsplash@2x.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 918px) {
+  #explore .explore-container {
+    background-size: auto 100%;
+  }
+}
+
+#explore .explore-container .transp {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(102, 150, 226, 0.42)), to(rgba(226, 120, 102, 0.42)));
+  background-image: linear-gradient(270deg, rgba(102, 150, 226, 0.42), rgba(226, 120, 102, 0.42));
+}
+
+#explore .explore-container .transp .container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  /*@media only screen and (max-width: 690px) {
+					flex-direction: column;
+				}*/
+}
+
+#explore .explore-container .transp .container .explore-tab {
+  margin: 0px;
+  padding: 0px;
+}
+
+#explore .explore-container .transp .container .explore-tab .tablinks {
+  /*width: 100px;
+						height: 100px;
+						background-color: #A37169;
+						list-style-type: none;
+						text-align: center;
+						line-height: 100px;
+						transition: 0.3s;
+						cursor: pointer;
+						&:not(:last-child) {
+							margin-bottom: 21px;
+						}*/
+}
+
+#explore .explore-container .transp .container .explore-tab .tablinks:hover {
+  background-color: #E27866;
+  color: white;
+}
+
+#explore .explore-container .transp .container .tab-content {
+  display: none;
+}
+
+#explore .explore-container .transp .container .tab-content .tab-content-left {
+  margin-left: 54px;
+  margin-right: 54px;
+}
+
+#explore .explore-container .transp .container .tab-content .tab-content-right {
+  width: 362px;
+  height: 366px;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#registerLeft {
+  background-image: url("../image/photo-1493409137604-0901c55e4456.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 168px;
+  height: 168px;
+}
+
+#registerRight {
+  background-image: url("../image/photo-1543364195-bfe6e4932397.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 168px;
+  height: 168px;
+}
+
+#registerBottom {
+  background-image: url("../image/photo-1448387473223-5c37445527e7.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 362px;
+  height: 177px;
+}
+
+.tablinks {
+  width: 100px;
+  height: 100px;
+  background-color: #A37169;
+  list-style-type: none;
+  text-align: center;
+  line-height: 100px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.63);
+  font-weight: bold;
+}
+
+.tablinks:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.tablinks.active {
+  background-color: #E27866;
+  color: white;
+}
+
 .social {
   height: 71px;
   display: -webkit-box;
@@ -425,8 +549,4 @@ footer .container p {
   .container {
     margin: 0px 26px;
   }
-}
-
-.active {
-  font-weight: bold;
 }

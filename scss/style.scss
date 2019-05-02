@@ -112,10 +112,8 @@ header, footer {
 #moto {
 	max-width: 2800px;
 	margin: 0px auto;
-	background: rgba(28, 28, 28,0.63);
 	.moto-container {
 		position: relative;
-		//height: 500px;
 		width: 100%;
 		background-image: url("../image/photo-1480714378408-67cf0d13bc1b@2x.png");
 		background-size: 100% auto;
@@ -282,7 +280,110 @@ header, footer {
 	}
 }
 
+#explore {
+	max-width: 2800px;
+	margin: 0px auto;
+	.explore-container {
+		position: relative;
+		width: 100%;
+		background-image: url("../image/christoffer-engstrom-503481-unsplash@2x.png");
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-position: center;
+		@media only screen and (max-width: 918px) {
+			background-size: auto 100%;
+		}
+		.transp {
+			background-image: linear-gradient(270deg, rgba(102, 150, 226, 0.42), rgba(226, 120, 102,0.42));
+			.container {
+				padding-top: 90px;
+				padding-bottom: 90px;
+				/*@media only screen and (max-width: 690px) {
+					flex-direction: column;
+				}*/
+				.explore-tab {
+					margin: 0px;
+					padding: 0px;
+					.tablinks {
+						/*width: 100px;
+						height: 100px;
+						background-color: #A37169;
+						list-style-type: none;
+						text-align: center;
+						line-height: 100px;
+						transition: 0.3s;
+						cursor: pointer;
+						&:not(:last-child) {
+							margin-bottom: 21px;
+						}*/
+						&:hover {
+							background-color: #E27866;
+							color: rgba(255,255,255,1);
+						}
+					}
+				}
+				.tab-content {
+					display: none;
+					.tab-content-left {
+						margin-left: 54px;
+						margin-right: 54px;
+					}
+					.tab-content-right {
+						width: 362px;
+						height: 366px;
+						background-color: red;
+						display: flex;
+					}
+				}
+			}
+		}
+	}
+}
 
+#registerLeft {
+	background-image: url("../image/photo-1493409137604-0901c55e4456.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 168px;
+	height: 168px;
+}
+#registerRight {
+	background-image: url("../image/photo-1543364195-bfe6e4932397.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 168px;
+	height: 168px;
+}
+#registerBottom {
+	background-image: url("../image/photo-1448387473223-5c37445527e7.png");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 362px;
+	height: 177px;
+}
+.tablinks {
+	width: 100px;
+	height: 100px;
+	background-color: #A37169;
+	list-style-type: none;
+	text-align: center;
+	line-height: 100px;
+	transition: 0.3s;
+	cursor: pointer;
+	color: rgba(255,255,255,0.63);
+	font-weight: bold;
+	&:not(:last-child) {
+		margin-bottom: 21px;
+	}
+}
+
+.tablinks.active {
+	background-color: #E27866;
+	color: rgba(255,255,255,1);
+}
 
 	.social {
 		height: 71px;
@@ -331,6 +432,4 @@ header, footer {
 		}
 }
 
-.active {
-	font-weight: bold;
-}
+
