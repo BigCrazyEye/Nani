@@ -349,12 +349,12 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   margin: 0px;
 }
 
-#explore {
+.explore {
   max-width: 2800px;
   margin: 0px auto;
 }
 
-#explore .explore-container {
+.explore .explore-container {
   position: relative;
   width: 100%;
   background-image: url("../image/christoffer-engstrom-503481-unsplash@2x.png");
@@ -364,30 +364,36 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 }
 
 @media only screen and (max-width: 918px) {
-  #explore .explore-container {
+  .explore .explore-container {
     background-size: auto 100%;
   }
 }
 
-#explore .explore-container .transp {
+.explore .explore-container .transp {
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(102, 150, 226, 0.42)), to(rgba(226, 120, 102, 0.42)));
   background-image: linear-gradient(270deg, rgba(102, 150, 226, 0.42), rgba(226, 120, 102, 0.42));
 }
 
-#explore .explore-container .transp .container {
+.explore .explore-container .transp .container {
   padding-top: 90px;
   padding-bottom: 90px;
-  /*@media only screen and (max-width: 690px) {
-					flex-direction: column;
-				}*/
 }
 
-#explore .explore-container .transp .container .explore-tab {
+@media only screen and (max-width: 690px) {
+  .explore .explore-container .transp .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.explore .explore-container .transp .container .explore-tab {
   margin: 0px;
   padding: 0px;
 }
 
-#explore .explore-container .transp .container .explore-tab .tablinks {
+.explore .explore-container .transp .container .explore-tab .tablinks {
   /*width: 100px;
 						height: 100px;
 						background-color: #A37169;
@@ -401,21 +407,45 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 						}*/
 }
 
-#explore .explore-container .transp .container .explore-tab .tablinks:hover {
+.explore .explore-container .transp .container .explore-tab .tablinks:hover {
   background-color: #E27866;
   color: white;
 }
 
-#explore .explore-container .transp .container .tab-content {
+.explore .explore-container .transp .container .tab-content {
   display: none;
 }
 
-#explore .explore-container .transp .container .tab-content .tab-content-left {
+@media only screen and (max-width: 690px) {
+  .explore .explore-container .transp .container .tab-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.explore .explore-container .transp .container .tab-content .tab-content-left {
   margin-left: 54px;
   margin-right: 54px;
 }
 
-#explore .explore-container .transp .container .tab-content .tab-content-right {
+@media only screen and (max-width: 690px) {
+  .explore .explore-container .transp .container .tab-content .tab-content-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: justify;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.explore .explore-container .transp .container .tab-content .tab-content-right {
   width: 362px;
   height: 366px;
   display: -webkit-box;
@@ -429,6 +459,13 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
+}
+
+#register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #registerLeft {
@@ -440,6 +477,18 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   height: 168px;
 }
 
+#registerLeft:hover:before {
+  position: absolute;
+  content: "Explore";
+  width: 168px;
+  height: 168px;
+  background-color: rgba(226, 120, 102, 0.8);
+  line-height: 168px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 #registerRight {
   background-image: url("../image/photo-1543364195-bfe6e4932397.png");
   background-size: 100% auto;
@@ -447,6 +496,18 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   background-position: center;
   width: 168px;
   height: 168px;
+}
+
+#registerRight:hover:before {
+  position: absolute;
+  content: "Explore";
+  width: 168px;
+  height: 168px;
+  background-color: rgba(226, 120, 102, 0.8);
+  line-height: 168px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #registerBottom {
@@ -458,13 +519,25 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   height: 177px;
 }
 
+#registerBottom:hover:before {
+  position: absolute;
+  content: "Explore";
+  width: 362px;
+  height: 177px;
+  background-color: rgba(226, 120, 102, 0.8);
+  line-height: 168px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .tablinks {
   width: 100px;
   height: 100px;
   background-color: #A37169;
   list-style-type: none;
   text-align: center;
-  line-height: 100px;
+  line-height: 50px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
@@ -474,6 +547,13 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 
 .tablinks:not(:last-child) {
   margin-bottom: 21px;
+}
+
+@media only screen and (max-width: 690px) {
+  .tablinks {
+    display: inline-block;
+    height: 50px;
+  }
 }
 
 .tablinks.active {

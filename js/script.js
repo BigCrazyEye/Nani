@@ -22,5 +22,6 @@ function openContent(evt, content) {
 	evt.currentTarget.className += " active";
 	//parenkam tab-content kurio id="content" ir padarom jo display: block;
 	document.getElementById(content).style.display = "flex";
+	//document.getElementsByClassName("tab-content")[0].style.display = "flex";
 	//document.getElementById("defaultOpen").click();
 }
