@@ -141,10 +141,13 @@ header, footer {
 				h1 {
 					font-size: 36px;
 					margin-bottom: 67px;
+					font-weight: bold;
 				}
 				p {
 					font-size: 16px;
 					position: relative;
+					font-weight: bold;
+					opacity: 0.8;
 					&:before {
 						position: absolute;
 						top: -24px;
@@ -290,7 +293,7 @@ header, footer {
 		background-size: 100% auto;
 		background-repeat: no-repeat;
 		background-position: center;
-		@media only screen and (max-width: 918px) {
+		@media only screen and (max-width: 966px) {
 			background-size: auto 100%;
 		}
 		.transp {
@@ -298,7 +301,7 @@ header, footer {
 			.container {
 				padding-top: 90px;
 				padding-bottom: 90px;
-				@media only screen and (max-width: 690px) {
+				@media only screen and (max-width: 966px) {
 					flex-direction: column;
 				}
 				.explore-tab {
@@ -324,15 +327,16 @@ header, footer {
 				}
 				.tab-content {
 					display: none;
-					@media only screen and (max-width: 690px) {
+					align-items: center;
+					@media only screen and (max-width: 966px) {
 						flex-direction: column;
 						align-items: center;
 					}
 					.tab-content-left {
 						margin-left: 54px;
 						margin-right: 54px;
-						@media only screen and (max-width: 690px) {
-						flex-direction: column;
+						@media only screen and (max-width: 966px) {
+							flex-direction: column;
 							text-align: justify;
 							margin-left: 0px;
 							margin-right: 0px;
@@ -347,6 +351,30 @@ header, footer {
 						justify-content: space-between;
 						align-items: center;
 						position: relative;
+						.small:hover:before {
+							position: absolute;
+							content: "Explore";
+							width: 168px;
+							height: 168px;
+							background-color: rgba(226, 120, 102, 0.8);
+							line-height: 168px;
+							text-align: center;
+							font-weight: bold;
+							font-size: 20px;
+							cursor: pointer;
+						}
+						.big:hover:before {
+							position: absolute;
+							content: "Explore";
+							width: 362px;
+							height: 177px;
+							background-color: rgba(226, 120, 102, 0.8);
+							line-height: 168px;
+							text-align: center;
+							font-weight: bold;
+							font-size: 20px;
+							cursor: pointer;
+						}
 					}
 				}
 			}
@@ -363,17 +391,6 @@ header, footer {
 	background-position: center;
 	width: 168px;
 	height: 168px;
-	&:hover:before {
-		position: absolute;
-		content: "Explore";
-		width: 168px;
-		height: 168px;
-		background-color: rgba(226, 120, 102, 0.8);
-		line-height: 168px;
-		text-align: center;
-		font-weight: bold;
-		font-size: 20px;
-	}
 }
 #registerRight {
 	background-image: url("../image/photo-1543364195-bfe6e4932397.png");
@@ -382,17 +399,6 @@ header, footer {
 	background-position: center;
 	width: 168px;
 	height: 168px;
-	&:hover:before {
-		position: absolute;
-		content: "Explore";
-		width: 168px;
-		height: 168px;
-		background-color: rgba(226, 120, 102, 0.8);
-		line-height: 168px;
-		text-align: center;
-		font-weight: bold;
-		font-size: 20px;
-	}
 }
 #registerBottom {
 	background-image: url("../image/photo-1448387473223-5c37445527e7.png");
@@ -401,17 +407,6 @@ header, footer {
 	background-position: center;
 	width: 362px;
 	height: 177px;
-	&:hover:before {
-		position: absolute;
-		content: "Explore";
-		width: 362px;
-		height: 177px;
-		background-color: rgba(226, 120, 102, 0.8);
-		line-height: 168px;
-		text-align: center;
-		font-weight: bold;
-		font-size: 20px;
-	}
 }
 .tablinks {
 	width: 100px;
@@ -419,7 +414,7 @@ header, footer {
 	background-color: #A37169;
 	list-style-type: none;
 	text-align: center;
-	line-height: 50px;
+	line-height: 100px;
 	transition: 0.3s;
 	cursor: pointer;
 	color: rgba(255,255,255,0.63);
@@ -428,9 +423,10 @@ header, footer {
 		margin-bottom: 21px;
 	}
 	
-	@media only screen and (max-width: 690px) {
+	@media only screen and (max-width: 966px) {
 		display: inline-block;
 		height: 50px;
+		line-height: 50px;
 	}
 }
 
@@ -438,6 +434,163 @@ header, footer {
 	background-color: #E27866;
 	color: rgba(255,255,255,1);
 }
+
+.about {
+	.values .container {
+		padding-top: 90px;
+		padding-bottom: 90px;
+		@media only screen and (max-width: 966px) {
+			flex-direction: column;
+		}
+			.values-logo {
+				width: 388px;
+				height: 169px;
+				background-image: url('../image/cheshire-county-hygiene-services (1).svg');
+				background-size: cover;
+			}
+			.values-container {
+				max-width: 450px;
+				position: relative;
+				@media only screen and (max-width: 966px) {
+					margin-left: 0px;
+					max-width: 100%;
+				}
+				h2 {
+					font-weight: bold;
+					font-size: 30px;
+					margin-bottom: 56px;
+				}
+				.line {
+					font-size: 14px;
+					position: relative;
+					&:before {
+						position: absolute;
+						top: 0px;
+						content: "";
+						width: 200px;
+						height: 2px;
+						background-color: #E27866;
+						transform: translateY(-28px);
+					}
+				}
+				.side-container {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					.eye {
+						margin-right: 19px;
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						background-color: #E27866;
+						background-image: url("../image/Path 81.svg");
+						background-repeat: no-repeat;
+						background-position: center;
+					}
+					.talk {
+						margin-right: 19px;
+						width: 50px;
+						height: 50px;
+						border-radius: 50%;
+						background-color: #E27866;
+						background-image: url("../image/Path 82.svg");
+						background-repeat: no-repeat;
+						background-position: center;
+					}
+					.side-text {
+						max-width: 381px;
+						@media only screen and (max-width: 966px) {
+							max-width: calc(100% - 69px);
+						}
+						h3 {
+							font-weight: bold;
+							font-size: 14px;
+						}
+						p {font-size: 14px;}
+					}
+				}
+			}
+		
+	}
+	.savybes {
+		background-color: #ffffff;
+		.savybes-container {
+			padding-top: 90px;
+			padding-bottom: 90px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0px auto;
+			max-width: 1100px;
+			@media only screen and (max-width : 1152px) {
+				margin: 0px 26px;
+			}
+			color: #212121;
+			h2 {
+				font-weight: bold;
+				font-size: 36px;
+			}
+			.center-line {
+				font-size: 14px;
+				color: #86878B;
+				position: relative;
+				&:before {
+					position: absolute;
+					content: "";
+					left: 50%;
+					top: -27px;
+					width: 60px;
+					height: 2px;
+					background-color: #E27866;
+					margin-left: -30px;
+				}
+			}
+			.savybes-main {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				width: 100%;
+				@media only screen and (max-width: 690px) {
+					flex-direction: column;
+					align-items: center;
+				}
+				.small-container {
+					margin-top: 51px;
+					text-align: center;
+					max-width: 286px;
+					.savybes-logo {
+						margin: 0px auto;
+						width: 50px;
+						height: 50px;
+						border-radius: 50px;
+						border: 1px solid #E27866;
+						background-repeat: no-repeat;
+						background-position: center;
+					}
+					h3 {
+						margin-top: 35px;
+						font-size: 20px;
+						color: #333333;
+					}
+					p {
+						font-size: 14px;
+						color: #86878B;
+					}
+				}
+			}
+		}
+	}
+}
+#design {
+	background-image: url("../image/Path 79.svg");
+}
+#craft {
+	background-image: url("../image/Path 76.svg");
+}
+#custumize {
+	background-image: url("../image/Path 78.svg");
+}
+
 
 	.social {
 		height: 71px;

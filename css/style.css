@@ -181,11 +181,14 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 #moto .moto-container .transp .container .moto-container-text h1 {
   font-size: 36px;
   margin-bottom: 67px;
+  font-weight: bold;
 }
 
 #moto .moto-container .transp .container .moto-container-text p {
   font-size: 16px;
   position: relative;
+  font-weight: bold;
+  opacity: 0.8;
 }
 
 #moto .moto-container .transp .container .moto-container-text p:before {
@@ -363,7 +366,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   background-position: center;
 }
 
-@media only screen and (max-width: 918px) {
+@media only screen and (max-width: 966px) {
   .explore .explore-container {
     background-size: auto 100%;
   }
@@ -379,7 +382,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   padding-bottom: 90px;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 966px) {
   .explore .explore-container .transp .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -414,9 +417,12 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 
 .explore .explore-container .transp .container .tab-content {
   display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 966px) {
   .explore .explore-container .transp .container .tab-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -433,7 +439,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   margin-right: 54px;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 966px) {
   .explore .explore-container .transp .container .tab-content .tab-content-left {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -462,6 +468,32 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   position: relative;
 }
 
+.explore .explore-container .transp .container .tab-content .tab-content-right .small:hover:before {
+  position: absolute;
+  content: "Explore";
+  width: 168px;
+  height: 168px;
+  background-color: rgba(226, 120, 102, 0.8);
+  line-height: 168px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.explore .explore-container .transp .container .tab-content .tab-content-right .big:hover:before {
+  position: absolute;
+  content: "Explore";
+  width: 362px;
+  height: 177px;
+  background-color: rgba(226, 120, 102, 0.8);
+  line-height: 168px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 #register {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,18 +509,6 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   height: 168px;
 }
 
-#registerLeft:hover:before {
-  position: absolute;
-  content: "Explore";
-  width: 168px;
-  height: 168px;
-  background-color: rgba(226, 120, 102, 0.8);
-  line-height: 168px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-}
-
 #registerRight {
   background-image: url("../image/photo-1543364195-bfe6e4932397.png");
   background-size: 100% auto;
@@ -496,18 +516,6 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   background-position: center;
   width: 168px;
   height: 168px;
-}
-
-#registerRight:hover:before {
-  position: absolute;
-  content: "Explore";
-  width: 168px;
-  height: 168px;
-  background-color: rgba(226, 120, 102, 0.8);
-  line-height: 168px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
 }
 
 #registerBottom {
@@ -519,25 +527,13 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   height: 177px;
 }
 
-#registerBottom:hover:before {
-  position: absolute;
-  content: "Explore";
-  width: 362px;
-  height: 177px;
-  background-color: rgba(226, 120, 102, 0.8);
-  line-height: 168px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-}
-
 .tablinks {
   width: 100px;
   height: 100px;
   background-color: #A37169;
   list-style-type: none;
   text-align: center;
-  line-height: 50px;
+  line-height: 100px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
@@ -549,16 +545,239 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   margin-bottom: 21px;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 966px) {
   .tablinks {
     display: inline-block;
     height: 50px;
+    line-height: 50px;
   }
 }
 
 .tablinks.active {
   background-color: #E27866;
   color: white;
+}
+
+.about .values .container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+@media only screen and (max-width: 966px) {
+  .about .values .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.about .values .container .values-logo {
+  width: 388px;
+  height: 169px;
+  background-image: url("../image/cheshire-county-hygiene-services (1).svg");
+  background-size: cover;
+}
+
+.about .values .container .values-container {
+  max-width: 450px;
+  position: relative;
+}
+
+@media only screen and (max-width: 966px) {
+  .about .values .container .values-container {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+}
+
+.about .values .container .values-container h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 56px;
+}
+
+.about .values .container .values-container .line {
+  font-size: 14px;
+  position: relative;
+}
+
+.about .values .container .values-container .line:before {
+  position: absolute;
+  top: 0px;
+  content: "";
+  width: 200px;
+  height: 2px;
+  background-color: #E27866;
+  -webkit-transform: translateY(-28px);
+  transform: translateY(-28px);
+}
+
+.about .values .container .values-container .side-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.about .values .container .values-container .side-container .eye {
+  margin-right: 19px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #E27866;
+  background-image: url("../image/Path 81.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about .values .container .values-container .side-container .talk {
+  margin-right: 19px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #E27866;
+  background-image: url("../image/Path 82.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about .values .container .values-container .side-container .side-text {
+  max-width: 381px;
+}
+
+@media only screen and (max-width: 966px) {
+  .about .values .container .values-container .side-container .side-text {
+    max-width: calc(100% - 69px);
+  }
+}
+
+.about .values .container .values-container .side-container .side-text h3 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.about .values .container .values-container .side-container .side-text p {
+  font-size: 14px;
+}
+
+.about .savybes {
+  background-color: #ffffff;
+}
+
+.about .savybes .savybes-container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0px auto;
+  max-width: 1100px;
+  color: #212121;
+}
+
+@media only screen and (max-width: 1152px) {
+  .about .savybes .savybes-container {
+    margin: 0px 26px;
+  }
+}
+
+.about .savybes .savybes-container h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.about .savybes .savybes-container .center-line {
+  font-size: 14px;
+  color: #86878B;
+  position: relative;
+}
+
+.about .savybes .savybes-container .center-line:before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: -27px;
+  width: 60px;
+  height: 2px;
+  background-color: #E27866;
+  margin-left: -30px;
+}
+
+.about .savybes .savybes-container .savybes-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+@media only screen and (max-width: 690px) {
+  .about .savybes .savybes-container .savybes-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.about .savybes .savybes-container .savybes-main .small-container {
+  margin-top: 51px;
+  text-align: center;
+  max-width: 286px;
+}
+
+.about .savybes .savybes-container .savybes-main .small-container .savybes-logo {
+  margin: 0px auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #E27866;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about .savybes .savybes-container .savybes-main .small-container h3 {
+  margin-top: 35px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.about .savybes .savybes-container .savybes-main .small-container p {
+  font-size: 14px;
+  color: #86878B;
+}
+
+#design {
+  background-image: url("../image/Path 79.svg");
+}
+
+#craft {
+  background-image: url("../image/Path 76.svg");
+}
+
+#custumize {
+  background-image: url("../image/Path 78.svg");
 }
 
 .social {
