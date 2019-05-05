@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
@@ -232,7 +233,90 @@
 			
 			<!-- 5 sekcija -->
 			
-			<div class="reviews" id="reviews"></div>
+			<div class="reviews" id="reviews">
+				<div class="reviews-background">
+					<div class="reviews-container">
+						<h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="comment">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+									</div>
+									<div class="custumer">
+										<div class="custumer-image"></div>
+										<div class="custumer-name">
+											<h3>Jeremy H.</h3>
+											<p>Manager</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="comment">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
+									</div>
+									<div class="custumer">
+										<div class="custumer-image"></div>
+										<div class="custumer-name">
+											<h3>Jeremy H.</h3>
+											<p>Freelancer</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="comment">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+									</div>
+									<div class="custumer">
+										<div class="custumer-image"></div>
+										<div class="custumer-name">
+											<h3>Jeremy H.</h3>
+											<p>Photographer</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="comment">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+									</div>
+									<div class="custumer">
+										<div class="custumer-image"></div>
+										<div class="custumer-name">
+											<h3>Jeremy H.</h3>
+											<p>Manager</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="comment">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+									</div>
+									<div class="custumer">
+										<div class="custumer-image"></div>
+										<div class="custumer-name">
+											<h3>Jeremy H.</h3>
+											<p>Manager</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="comment">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
+									</div>
+									<div class="custumer">
+										<div class="custumer-image"></div>
+										<div class="custumer-name">
+											<h3>Jeremy H.</h3>
+											<p>Manager</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 			
 			<!-- 6 sekcija -->
 			
@@ -252,5 +336,16 @@
 			</div>
 		</footer>
 		<script src="js/script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+		<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 	</body>
 </html>

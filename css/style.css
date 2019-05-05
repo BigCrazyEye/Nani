@@ -919,6 +919,166 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   padding: 11px;
 }
 
+.reviews-background {
+  background-color: #ffffff;
+}
+
+.reviews-background .reviews-container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0px auto;
+  max-width: 1100px;
+  color: #1C1C1C;
+}
+
+@media only screen and (max-width: 1152px) {
+  .reviews-background .reviews-container {
+    margin: 0px 26px;
+  }
+}
+
+.reviews-background .reviews-container h2 {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 91px;
+  position: relative;
+}
+
+.reviews-background .reviews-container h2:after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 58px;
+  width: 64px;
+  height: 2px;
+  background-color: #6696E2;
+  margin-left: -32px;
+}
+
+.reviews-background .reviews-container .swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.reviews-background .reviews-container .swiper-container:before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: -58px;
+  width: 64px;
+  height: 2px;
+  background-color: #6696E2;
+  margin-left: -32px;
+}
+
+.reviews-background .reviews-container .swiper-container .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 86px;
+}
+
+.reviews-background .reviews-container .swiper-container .swiper-wrapper .swiper-slide .comment {
+  background-color: #6696E2;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 273px;
+  position: relative;
+}
+
+.reviews-background .reviews-container .swiper-container .swiper-wrapper .swiper-slide .comment:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #6696E2;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  bottom: -7px;
+  left: 27px;
+}
+
+.reviews-background .reviews-container .swiper-container .swiper-wrapper .swiper-slide .comment p {
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0px;
+}
+
+.reviews-background .reviews-container .swiper-container .swiper-wrapper .swiper-slide .custumer {
+  max-width: 273px;
+  margin-top: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews-background .reviews-container .swiper-container .swiper-wrapper .swiper-slide .custumer .custumer-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 14px;
+  background-image: url("../image/avatar_2_u231.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews-background .reviews-container .swiper-container .swiper-wrapper .swiper-slide .custumer .custumer-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.reviews-background .reviews-container .swiper-container .swiper-wrapper .swiper-slide .custumer .custumer-name h3 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #333333;
+  margin: 0px;
+  margin-bottom: 4px;
+}
+
+.reviews-background .reviews-container .swiper-container .swiper-wrapper .swiper-slide .custumer .custumer-name p {
+  font-size: 14px;
+  color: #86878B;
+  margin: 0px;
+}
+
+.reviews-background .reviews-container .swiper-container .swiper-pagination {
+  position: static;
+}
+
+.reviews-background .reviews-container .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #E27866;
+  background: #ffffff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.reviews-background .reviews-container .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background: #E27866;
+}
+
 .social {
   height: 71px;
   display: -webkit-box;

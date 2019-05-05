@@ -5,7 +5,7 @@ function menuIcon() {
   } else {
     x.className = "nav";
   }
-}
+};
 
 function openContent(evt, content) {
 	let i, tabcontent, tablinks;
@@ -24,4 +24,6 @@ function openContent(evt, content) {
 	document.getElementById(content).style.display = "flex";
 	//document.getElementsByClassName("tab-content")[0].style.display = "flex";
 	//document.getElementById("defaultOpen").click();
-}
+};
+
+
