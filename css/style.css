@@ -842,7 +842,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   width: 100%;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 966px) {
   .pricing-background .pricing-container .price-main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -862,27 +862,41 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   overflow: hidden;
 }
 
+.pricing-background .pricing-container .price-main .small-container:nth-child(2) {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 966px) {
+  .pricing-background .pricing-container .price-main .small-container:nth-child(2) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
 .pricing-background .pricing-container .price-main .small-container h3 {
   padding-top: 14px;
+  padding-bottom: 14px;
   margin: 0px;
   font-size: 20px;
   background-color: #333333;
+  font-weight: normal;
 }
 
 .pricing-background .pricing-container .price-main .small-container .price {
   background-color: #333333;
   margin: 0px;
-  font-size: 30px;
+  font-size: 34px;
 }
 
 .pricing-background .pricing-container .price-main .small-container .price span {
-  font-size: 80px;
+  font-size: 90px;
 }
 
 .pricing-background .pricing-container .price-main .small-container .price-title {
   background-color: #333333;
   margin: 0px;
-  padding: 18px;
+  padding-bottom: 18px;
   font-size: 14px;
 }
 
