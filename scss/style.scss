@@ -71,6 +71,9 @@ header, footer {
 					height: 2px;
 					right: 0px;
 					bottom: -26px;
+					@media only screen and (max-width : 690px) {
+						bottom: -5px;
+					}
 				}
 				&:hover a {
 					opacity: 1;
