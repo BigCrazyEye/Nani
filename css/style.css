@@ -288,8 +288,10 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 #moto .moto-container .transp .container .moto-container-form form .customRadio {
   position: relative;
   cursor: pointer;
-  padding-left: 22px;
   font-size: 9px;
+  display: inline-block;
+  height: 13px;
+  line-height: 13px;
 }
 
 #moto .moto-container .transp .container .moto-container-form form .customRadio input {
@@ -302,12 +304,21 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   display: block;
 }
 
+#moto .moto-container .transp .container .moto-container-form form .customRadio input:checked ~ .text {
+  font-weight: bold;
+}
+
+#moto .moto-container .transp .container .moto-container-form form .customRadio .text {
+  display: inline-block;
+  padding-left: 22px;
+}
+
 #moto .moto-container .transp .container .moto-container-form form .customRadio .checkmark {
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 12px;
-  width: 12px;
+  height: 11px;
+  width: 11px;
   border: 1px solid #41d395;
   border-radius: 50%;
 }
@@ -318,8 +329,8 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   display: none;
   top: 3px;
   left: 3px;
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: #41d395;
 }
@@ -347,7 +358,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   padding: 19px 0px;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 780px) {
   #moto .moto-footer .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -358,9 +369,10 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 
 #moto .moto-footer .container .moto-footer-text {
   max-width: 400px;
+  margin-right: 20px;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 780px) {
   #moto .moto-footer .container .moto-footer-text {
     text-align: center;
   }
@@ -744,7 +756,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   margin-left: -30px;
 }
 
-@media only screen and (max-width: 1152px) {
+@media only screen and (max-width: 460px) {
   .about .savybes .savybes-container .center-line:before {
     left: 0px;
     margin-left: 0px;
@@ -848,7 +860,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   font-size: 36px;
 }
 
-@media only screen and (max-width: 1152px) {
+@media only screen and (max-width: 460px) {
   .pricing-background .pricing-container h2 {
     -ms-flex-item-align: start;
     align-self: flex-start;
@@ -871,7 +883,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   margin-left: -32px;
 }
 
-@media only screen and (max-width: 1152px) {
+@media only screen and (max-width: 460px) {
   .pricing-background .pricing-container .center-line:before {
     left: 0px;
     margin-left: 0px;
@@ -1162,7 +1174,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 1152px) {
+@media only screen and (max-width: 460px) {
   .contact-background .contact-container h2 {
     -ms-flex-item-align: start;
     align-self: flex-start;
@@ -1227,26 +1239,38 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
 .contact-background .contact-container .contact-form form .customRadio {
   position: relative;
   cursor: pointer;
-  padding-left: 22px;
   font-size: 9px;
+  display: inline-block;
+  height: 13px;
+  line-height: 13px;
 }
 
 .contact-background .contact-container .contact-form form .customRadio input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
+  margin: 0px;
 }
 
 .contact-background .contact-container .contact-form form .customRadio input:checked ~ .checkmark:after {
   display: block;
 }
 
+.contact-background .contact-container .contact-form form .customRadio input:checked ~ .text {
+  font-weight: bold;
+}
+
+.contact-background .contact-container .contact-form form .customRadio .text {
+  display: inline-block;
+  padding-left: 22px;
+}
+
 .contact-background .contact-container .contact-form form .customRadio .checkmark {
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 12px;
-  width: 12px;
+  height: 11px;
+  width: 11px;
   border: 1px solid #41d395;
   border-radius: 50%;
 }
@@ -1257,8 +1281,8 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   display: none;
   top: 3px;
   left: 3px;
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: #41d395;
 }
@@ -1290,7 +1314,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   align-items: center;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 780px) {
   .social {
     height: auto;
     margin-top: 18px;
@@ -1307,7 +1331,7 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   }
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 780px) {
   .social a {
     padding-right: 20px;
   }

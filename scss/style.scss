@@ -213,22 +213,30 @@ header, footer {
 					.customRadio {
 						position: relative;
 						cursor: pointer;
-						padding-left: 22px;
 						font-size: 9px;
+						display: inline-block;
+						height: 13px;
+						line-height: 13px;
 						input {
 							position: absolute;
 							opacity: 0;
 							cursor: pointer;
 							&:checked ~ .checkmark:after {
 								display: block;
+							}&:checked ~ .text {
+								font-weight: bold;
 							}
+						}
+						.text {
+							display: inline-block;
+							padding-left: 22px;
 						}
 						.checkmark {
 							position: absolute;
 							top: 0px;
 							left: 0px;
-							height: 12px;
-							width: 12px;
+							height: 11px;
+							width: 11px;
 							border: 1px solid #41d395;
 							border-radius: 50%;
 							&:after {
@@ -237,8 +245,8 @@ header, footer {
 								display: none;
 								top: 3px;
 								left: 3px;
-								width: 6px;
-								height: 6px;
+								width: 5px;
+								height: 5px;
 								border-radius: 50%;
 								background: #41d395;
 							}
@@ -263,16 +271,16 @@ header, footer {
 		}
 	}
 	.moto-footer {
-		
 		background-color: #ffffff;
 		.container {
 			padding: 19px 0px;
-			@media only screen and (max-width: 690px) {
+			@media only screen and (max-width: 780px) {
 				flex-direction: column;
 			}
 			.moto-footer-text {
 				max-width: 400px;
-				@media only screen and (max-width: 690px) {
+				margin-right: 20px;
+				@media only screen and (max-width: 780px) {
 					text-align: center;
 				}
 				h3 {
@@ -552,10 +560,10 @@ header, footer {
 					height: 2px;
 					background-color: #E27866;
 					margin-left: -30px;
-					@media only screen and (max-width : 1152px) {
-					left: 0px;
-					margin-left: 0px;
-				}
+					@media only screen and (max-width : 460px) {
+						left: 0px;
+						margin-left: 0px;
+					}
 				}
 			}
 			.savybes-main {
@@ -621,7 +629,7 @@ header, footer {
 		h2 {
 			font-weight: bold;
 			font-size: 36px;
-			@media only screen and (max-width : 1152px) {
+			@media only screen and (max-width : 460px) {
 				align-self: flex-start;
 			}
 			
@@ -638,7 +646,7 @@ header, footer {
 				height: 2px;
 				background-color: #41D395;
 				margin-left: -32px;
-				@media only screen and (max-width : 1152px) {
+				@media only screen and (max-width : 460px) {
 					left: 0px;
 					margin-left: 0px;
 				}
@@ -852,7 +860,7 @@ header, footer {
 			font-weight: bold;
 			font-size: 36px;
 			margin-bottom: 50px;
-			@media only screen and (max-width : 1152px) {
+			@media only screen and (max-width : 460px) {
 				align-self: flex-start;
 			}
 		}
@@ -886,22 +894,32 @@ header, footer {
 					.customRadio {
 						position: relative;
 						cursor: pointer;
-						padding-left: 22px;
 						font-size: 9px;
+						display: inline-block;
+						height: 13px;
+						line-height: 13px;
 						input {
 							position: absolute;
 							opacity: 0;
 							cursor: pointer;
+							margin: 0px;
 							&:checked ~ .checkmark:after {
 								display: block;
 							}
+							&:checked ~ .text {
+								font-weight: bold;
+							}
+						}
+						.text {
+							display: inline-block;
+							padding-left: 22px;
 						}
 						.checkmark {
 							position: absolute;
 							top: 0px;
 							left: 0px;
-							height: 12px;
-							width: 12px;
+							height: 11px;
+							width: 11px;
 							border: 1px solid #41d395;
 							border-radius: 50%;
 							&:after {
@@ -910,8 +928,8 @@ header, footer {
 								display: none;
 								top: 3px;
 								left: 3px;
-								width: 6px;
-								height: 6px;
+								width: 5px;
+								height: 5px;
 								border-radius: 50%;
 								background: #41d395;
 							}
@@ -943,7 +961,7 @@ header, footer {
 		height: 71px;
 		display: flex;
 		align-items: center;
-		@media only screen and (max-width: 690px) {
+		@media only screen and (max-width: 780px) {
 			height: auto;
 			margin-top: 18px;
 		}
@@ -952,7 +970,7 @@ header, footer {
 		@media only screen and (max-width : 1152px) {
 			padding-right: 60px;
 		}
-		@media only screen and (max-width : 690px) {
+		@media only screen and (max-width : 780px) {
 			padding-right: 20px;
 		}
 			&:last-child {

@@ -25,7 +25,7 @@
 		</header>
 		<main>
 			<!-- 1 sekcija -->
-			<div id="moto">
+			<div class="moto" id="moto">
 				<div class="moto-container">
 					<div class="transp">
 						<div class="container">
@@ -45,12 +45,12 @@
 									<p>Type of subscription</p>
 									<label for="Monthly" class="customRadio">
 										<input checked="checked" type="radio" name="subscription" id="Monthly">
-										Monthly
+										<span class="text">MONTHLY</span>
 										<span class="checkmark"></span>
 									</label>
 									<label for="Yearly" class="customRadio">
 										<input type="radio" name="subscription" id="Yearly">
-										Yearly
+										<span class="text">YEARLY</span>
 										<span class="checkmark"></span>
 									</label>
 								</form>
@@ -331,13 +331,13 @@
 								<input type="text" id="contact-latsName"  placeholder="Last name">
 								<input type="tel" id="contact-phoneNumber" placeholder="Phone number">
 								<label for="personal" class="customRadio">
-									<input checked="checked" type="radio" name="subscription" id="company">
-									PERSONAL
+									<input checked="checked" type="radio" name="subscription" id="personal">
+									<span class="text">PERSONAL</span>
 									<span class="checkmark"></span>
 								</label>
 								<label for="company" class="customRadio">
 									<input type="radio" name="subscription" id="company">
-									COMPANY
+									<span class="text">COMPANY</span>
 									<span class="checkmark"></span>
 								</label>
 							</form>
