@@ -585,6 +585,18 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   margin-bottom: 21px;
 }
 
+.tablinks .rotated {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 966px) {
+  .tablinks .rotated {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
 @media only screen and (max-width: 966px) {
   .tablinks {
     display: inline-block;

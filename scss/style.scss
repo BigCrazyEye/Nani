@@ -439,7 +439,12 @@ header, footer {
 	&:not(:last-child) {
 		margin-bottom: 21px;
 	}
-	
+	.rotated {
+		transform: rotate(-45deg);
+		@media only screen and (max-width: 966px) {
+			transform: rotate(0deg);
+		}
+	}
 	@media only screen and (max-width: 966px) {
 		display: inline-block;
 		height: 50px;
@@ -1003,5 +1008,6 @@ header, footer {
 			margin: 0px 26px;
 		}
 }
+
 
 
