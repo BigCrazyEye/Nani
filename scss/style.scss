@@ -199,6 +199,12 @@ header, footer {
 						border: none;
 						border-bottom: 1px solid #d8d8d8;
 						width: 100%;
+						outline: none;
+						padding-left: 9px;
+						&::placeholder {
+							color: #D8D8D8;
+							font-size: 12px;
+						}
 					}
 					input:not(:first-of-type) {margin-top: 34px;}
 					.customRadio {
@@ -235,7 +241,7 @@ header, footer {
 							}
 						}
 					}
-					.customRadio:not(last-child) {
+					.customRadio:not(:last-child) {
 						padding-right: 22px;
 					}
 				}
@@ -543,6 +549,10 @@ header, footer {
 					height: 2px;
 					background-color: #E27866;
 					margin-left: -30px;
+					@media only screen and (max-width : 1152px) {
+					left: 0px;
+					margin-left: 0px;
+				}
 				}
 			}
 			.savybes-main {
@@ -608,6 +618,10 @@ header, footer {
 		h2 {
 			font-weight: bold;
 			font-size: 36px;
+			@media only screen and (max-width : 1152px) {
+				align-self: flex-start;
+			}
+			
 		}
 		.center-line {
 			font-size: 14px;
@@ -621,6 +635,10 @@ header, footer {
 				height: 2px;
 				background-color: #41D395;
 				margin-left: -32px;
+				@media only screen and (max-width : 1152px) {
+					left: 0px;
+					margin-left: 0px;
+				}
 			}
 		}
 		.price-main {
@@ -634,7 +652,6 @@ header, footer {
 			}
 			.small-container {
 				margin-top: 83px;
-				
 				text-align: center;
 				width: 343px;
 				border-radius: 5px;
@@ -809,6 +826,111 @@ header, footer {
 				}
 			}
 		}
+		
+		
+	}
+}
+
+.contact-background {
+	background-color: #E27866;
+	.contact-container {
+		padding-top: 90px;
+		padding-bottom: 90px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0px auto;
+		max-width: 1100px;
+		@media only screen and (max-width : 1152px) {
+			margin: 0px 26px;
+		}
+		color: #FFFFFF;
+		h2 {
+			font-weight: bold;
+			font-size: 36px;
+			margin-bottom: 50px;
+			@media only screen and (max-width : 1152px) {
+				align-self: flex-start;
+			}
+		}
+		p {
+			font-size: 14px;
+		}
+		.contact-form {
+				background-color: white;
+				border-radius: 5px;
+				color: #000000;
+				overflow: hidden;
+				max-width: 390px;
+				min-width: 300px;
+				margin-top: 27px;
+				padding-bottom: 32px;
+				form {
+					margin: 32px 65px;
+					input[type="text"], input[type="tel"] {
+						border: none;
+						border-bottom: 1px solid #d8d8d8;
+						width: 100%;
+						outline: none;
+						padding-left: 9px;
+						&::placeholder {
+							color: #D8D8D8;
+							font-size: 12px;
+						}
+					}
+					input:not(:last-of-type) {margin-bottom: 34px;}
+					input:last-of-type {margin-bottom: 25px;}
+					.customRadio {
+						position: relative;
+						cursor: pointer;
+						padding-left: 22px;
+						font-size: 9px;
+						input {
+							position: absolute;
+							opacity: 0;
+							cursor: pointer;
+							&:checked ~ .checkmark:after {
+								display: block;
+							}
+						}
+						.checkmark {
+							position: absolute;
+							top: 0px;
+							left: 0px;
+							height: 12px;
+							width: 12px;
+							border: 1px solid #41d395;
+							border-radius: 50%;
+							&:after {
+								content: "";
+								position: absolute;
+								display: none;
+								top: 3px;
+								left: 3px;
+								width: 6px;
+								height: 6px;
+								border-radius: 50%;
+								background: #41d395;
+							}
+						}
+					}
+					.customRadio:not(:last-child) {
+						padding-right: 22px;
+					}
+				}
+				.button {
+					background-color: #41d395;
+					color: #ffffff;
+					text-align: center;
+					font-size: 15px;
+					margin: 0px auto;
+					width: 158px;
+					padding: 15px 0px;
+					font-weight: bold;
+					cursor: pointer;
+					border-radius: 5px;
+				}
+			}
 		
 		
 	}
