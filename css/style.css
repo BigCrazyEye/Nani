@@ -508,9 +508,17 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   position: relative;
 }
 
-.explore .explore-container .transp .container .tab-content .tab-content-right .small:hover:before {
+.explore .explore-container .transp .container .tab-content .tab-content-right .small:hover:before, .explore .explore-container .transp .container .tab-content .tab-content-right .big:hover:before {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.explore .explore-container .transp .container .tab-content .tab-content-right .small:before {
   position: absolute;
   content: "Explore";
+  -webkit-transform: translateY(-3px) scale(0.905, 0.905);
+  transform: translateY(-3px) scale(0.905, 0.905);
   width: 168px;
   height: 168px;
   background-color: rgba(226, 120, 102, 0.8);
@@ -519,9 +527,10 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   font-weight: bold;
   font-size: 20px;
   cursor: pointer;
+  opacity: 0;
 }
 
-.explore .explore-container .transp .container .tab-content .tab-content-right .big:hover:before {
+.explore .explore-container .transp .container .tab-content .tab-content-right .big:before {
   position: absolute;
   content: "Explore";
   width: 362px;
@@ -532,6 +541,9 @@ header .container .nav li:hover a, footer .container .nav li:hover a {
   font-weight: bold;
   font-size: 20px;
   cursor: pointer;
+  -webkit-transform: translateY(-3px) scale(0.955, 0.96);
+  transform: translateY(-3px) scale(0.955, 0.96);
+  opacity: 0;
 }
 
 #register {

@@ -368,9 +368,14 @@ header, footer {
 						justify-content: space-between;
 						align-items: center;
 						position: relative;
-						.small:hover:before {
+						.small:hover:before, .big:hover:before {
+							transition: 0.3s;
+							opacity: 1;
+						}
+						.small:before {
 							position: absolute;
 							content: "Explore";
+							transform: translateY(-3px) scale(0.905, 0.905);
 							width: 168px;
 							height: 168px;
 							background-color: rgba(226, 120, 102, 0.8);
@@ -379,8 +384,9 @@ header, footer {
 							font-weight: bold;
 							font-size: 20px;
 							cursor: pointer;
+							opacity: 0;
 						}
-						.big:hover:before {
+						.big:before {
 							position: absolute;
 							content: "Explore";
 							width: 362px;
@@ -391,6 +397,8 @@ header, footer {
 							font-weight: bold;
 							font-size: 20px;
 							cursor: pointer;
+							transform: translateY(-3px) scale(0.955, 0.96);
+							opacity: 0;
 						}
 					}
 				}
