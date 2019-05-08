@@ -1,0 +1,92 @@
+.moto {
+	max-width: 2000px;
+	margin: 0px auto;
+	.moto-container {
+		position: relative;
+		width: 100%;
+		background-image: url($moto);
+		@media only screen and (max-width: 918px) {
+			background-size: auto 100%;
+		}
+		.transp {
+			background: rgba(28, 28, 28, 0.63);
+		.container {
+			@media only screen and (max-width: 690px) {
+				flex-direction: column;
+			}
+			.moto-container-text {
+				max-width: 650px;
+				.moto-logo {
+					background-image: url($big-logo);
+					background-size: cover;
+					width: 247px;
+					height: 108px;
+				}
+				h1 {
+					font-size: 36px;
+					margin-bottom: 67px;
+					font-weight: bold;
+				}
+				p {
+					font-size: 16px;
+					position: relative;
+					font-weight: bold;
+					opacity: 0.8;
+					&:before {
+						position: absolute;
+						top: -24px;
+						content: "";
+						width: 80px;
+						height: 2px;
+						background-color: $white;
+					}
+				}
+				.downloads {
+					display: inline-block;
+					padding: 10px;
+					font-size: 16px;
+					border: 2px solid $white;
+					cursor: pointer;
+				}
+			}
+			
+			.moto-form {
+				max-width: 360px;
+				margin-left: 40px;
+				@media only screen and (max-width: 690px) {
+					margin-top: 60px;
+					margin-left: 0px;
+				}
+			}
+		}
+		}
+	}
+	.moto-footer {
+		background-color: $white;
+		.container {
+			padding: 19px 0px;
+			@media only screen and (max-width: 780px) {
+				flex-direction: column;
+			}
+			.moto-footer-text {
+				max-width: 400px;
+				margin-right: 20px;
+				@media only screen and (max-width: 780px) {
+					text-align: center;
+				}
+				h3 {
+					color: $title-grey;
+					font-size: 20px;
+					padding: 0px;
+					margin: 0px;
+				}
+				p {
+					color: $text-grey;
+					font-size: 14px;
+					padding: 0px;
+					margin: 0px;
+				}
+			}
+		}
+	}
+}

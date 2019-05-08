@@ -1,4 +1,4 @@
-@import 'variables', 'form';
+@import 'variables', 'form', 'container-vertical', 'container-horizontal', 'moto';
 
 body {
 	margin: 0px;
@@ -10,22 +10,14 @@ body {
 header, footer {
 	background-color: $main-black;
 	.container {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 0px auto;
-		max-width: 1100px;
-		@media only screen and (max-width : 1152px) {
-			margin: 0px 26px;
-		}
-		
+		padding-top: 0px;
+		padding-bottom: 0px;
 		.logo {
-			background-image: url('../image/cheshire-county-hygiene-services.svg');
+			background-image: url($small-logo);
 			background-size: cover;
 			width: 119px;
 			height: 52px;
 		}
-		
 		.icon {
 			display: none;
 			margin: 0px;
@@ -35,8 +27,8 @@ header, footer {
 				margin: 26px 0px 26px 44px;
 			}
 			img {
-					width: 13px;
-					height: 13px;
+				width: 13px;
+				height: 13px;
 			}
 			
 		}
@@ -112,122 +104,18 @@ header, footer {
 
 }
 
-.moto {
-	max-width: 2000px;
-	margin: 0px auto;
-	.moto-container {
-		position: relative;
-		width: 100%;
-		background-image: url($moto);
-		background-size: 100% auto;
-		background-repeat: no-repeat;
-		background-position: center;
-		@media only screen and (max-width: 918px) {
-			background-size: auto 100%;
-		}
-		.transp {
-			background: rgba(28, 28, 28, 0.63);
-		.container {
-			padding-top: 90px;
-			padding-bottom: 90px;
-			@media only screen and (max-width: 690px) {
-				flex-direction: column;
-			}
-			.moto-container-text {
-				max-width: 650px;
-				.moto-logo {
-					background-image: url('../image/cheshire-county-hygiene-services (1).svg');
-					background-size: cover;
-					width: 247px;
-					height: 108px;
-				}
-				h1 {
-					font-size: 36px;
-					margin-bottom: 67px;
-					font-weight: bold;
-				}
-				p {
-					font-size: 16px;
-					position: relative;
-					font-weight: bold;
-					opacity: 0.8;
-					&:before {
-						position: absolute;
-						top: -24px;
-						content: "";
-						width: 80px;
-						height: 2px;
-						background-color: $white;
-					}
-				}
-				.button {
-					display: inline-block;
-					padding: 10px;
-					font-size: 16px;
-					border: 2px solid $white;
-					cursor: pointer;
-				}
-			}
-			
-			.moto-form {
-				max-width: 360px;
-				margin-left: 40px;
-				@media only screen and (max-width: 690px) {
-					margin-top: 60px;
-					margin-left: 0px;
-				}
-			}
-		}
-		}
-	}
-	.moto-footer {
-		background-color: $white;
-		.container {
-			padding: 19px 0px;
-			@media only screen and (max-width: 780px) {
-				flex-direction: column;
-			}
-			.moto-footer-text {
-				max-width: 400px;
-				margin-right: 20px;
-				@media only screen and (max-width: 780px) {
-					text-align: center;
-				}
-				h3 {
-					color: $title-grey;
-					font-size: 20px;
-					padding: 0px;
-					margin: 0px;
-				}
-				p {
-					color: $text-grey;
-					font-size: 14px;
-					padding: 0px;
-					margin: 0px;
-				}
-			}
-		}
-	}
-}
-
 .explore {
 	max-width: 2000px;
 	margin: 0px auto;
 	.explore-container {
-		position: relative;
 		width: 100%;
 		background-image: url($explore);
-		background-size: 100% auto;
-		background-repeat: no-repeat;
-		background-position: center;
 		@media only screen and (max-width: 966px) {
 			background-size: auto 100%;
 		}
 		.transp {
 			background-image: linear-gradient(270deg, rgba(102, 150, 226, 0.42), rgba(226, 120, 102,0.42));
 			.container {
-				padding-top: 90px;
-				padding-bottom: 90px;
 				@media only screen and (max-width: 966px) {
 					flex-direction: column;
 				}
@@ -272,7 +160,6 @@ header, footer {
 					.tab-content-right {
 						width: 362px;
 						height: 366px;
-						//background-color: red;
 						display: flex;
 						flex-wrap: wrap;
 						justify-content: space-between;
@@ -321,25 +208,16 @@ header, footer {
 }
 #registerLeft {
 	background-image: url("../image/photo-1493409137604-0901c55e4456.png");
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: center;
 	width: 168px;
 	height: 168px;
 }
 #registerRight {
 	background-image: url("../image/photo-1543364195-bfe6e4932397.png");
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: center;
 	width: 168px;
 	height: 168px;
 }
 #registerBottom {
 	background-image: url("../image/photo-1448387473223-5c37445527e7.png");
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: center;
 	width: 362px;
 	height: 177px;
 }
@@ -377,15 +255,13 @@ header, footer {
 
 .about {
 	.values .container {
-		padding-top: 90px;
-		padding-bottom: 90px;
 		@media only screen and (max-width: 966px) {
 			flex-direction: column;
 		}
 			.values-logo {
 				width: 388px;
 				height: 169px;
-				background-image: url('../image/cheshire-county-hygiene-services (1).svg');
+				background-image: url($big-logo);
 				background-size: cover;
 			}
 			.values-container {
@@ -454,25 +330,9 @@ header, footer {
 	.savybes {
 		background-color: $white;
 		.savybes-container {
-			padding-top: 90px;
-			padding-bottom: 90px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin: 0px auto;
-			max-width: 1100px;
-			@media only screen and (max-width : 1152px) {
-				margin: 0px 26px;
-			}
-			color: $savybes-grey
-			h2 {
-				font-weight: bold;
-				font-size: 36px;
-			}
+			color: $main-black;
 			.center-line {
-				font-size: 14px;
 				color: $text-grey;
-				position: relative;
 				&:before {
 					position: absolute;
 					content: "";
@@ -489,17 +349,12 @@ header, footer {
 				}
 			}
 			.savybes-main {
-				display: flex;
-				justify-content: space-between;
-				align-items: flex-start;
-				width: 100%;
 				@media only screen and (max-width: 690px) {
 					flex-direction: column;
 					align-items: center;
 				}
 				.small-container {
 					margin-top: 51px;
-					text-align: center;
 					max-width: 286px;
 					.savybes-logo {
 						margin: 0px auto;
@@ -512,7 +367,6 @@ header, footer {
 					}
 					h3 {
 						margin-top: 35px;
-						font-size: 20px;
 						color: $title-grey;
 					}
 					p {
@@ -525,67 +379,45 @@ header, footer {
 	}
 }
 #design {
-	background-image: url("../image/Path 79.svg");
+	background-image: url($design);
 }
 #craft {
-	background-image: url("../image/Path 76.svg");
+	background-image: url($craft);
 }
 #custumize {
-	background-image: url("../image/Path 78.svg");
+	background-image: url($custumize);
 }
 
 .pricing-background {
 	background-color: $light-blue;
 	.pricing-container {
-		padding-top: 90px;
-		padding-bottom: 90px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 0px auto;
-		max-width: 1100px;
-		@media only screen and (max-width : 1152px) {
-			margin: 0px 26px;
-		}
 		color: $white;
 		h2 {
-			font-weight: bold;
-			font-size: 36px;
 			@media only screen and (max-width : 460px) {
 				align-self: flex-start;
 			}
-			
 		}
-		.center-line {
-			font-size: 14px;
-			position: relative;
-			&:before {
-				position: absolute;
-				content: "";
-				left: 50%;
-				top: -27px;
-				width: 64px;
-				height: 2px;
-				background-color: $light-green;
-				margin-left: -32px;
-				@media only screen and (max-width : 460px) {
-					left: 0px;
-					margin-left: 0px;
-				}
+		.center-line:before {
+			position: absolute;
+			content: "";
+			left: 50%;
+			top: -27px;
+			width: 64px;
+			height: 2px;
+			background-color: $light-green;
+			margin-left: -32px;
+			@media only screen and (max-width : 460px) {
+				left: 0px;
+				margin-left: 0px;
 			}
 		}
 		.price-main {
-			display: flex;
-			justify-content: space-between;
-			align-items: flex-end;
-			width: 100%;
 			@media only screen and (max-width: 966px) {
 				flex-direction: column;
 				align-items: center;
 			}
 			.small-container {
 				margin-top: 83px;
-				text-align: center;
 				width: 343px;
 				border-radius: 5px;
 				overflow: hidden;
@@ -595,23 +427,21 @@ header, footer {
 					@media only screen and (max-width: 966px) {
 						margin-right: 0px;
 						margin-left: 0px;
+					}
 				}
-				}
-				
 				h3 {
 					padding-top: 14px;
 					padding-bottom: 14px;
 					margin: 0px;
-					font-size: 20px;
 					background-color: $title-grey;
 					font-weight: normal;
 				}
 				.price {
 					background-color: $title-grey;
 					margin: 0px;
-					font-size: 34px;
+					font-size: 36px;
 					span {
-						font-size: 90px;
+						font-size: 94px;
 					}
 				}
 				.price-title {
@@ -644,34 +474,20 @@ header, footer {
 .reviews-background {
 	background-color: $white;
 	.reviews-container {
-		padding-top: 90px;
-		padding-bottom: 90px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 0px auto;
-		max-width: 1100px;
-		@media only screen and (max-width : 1152px) {
-			margin: 0px 26px;
-		}
 		color: $main-black;
 		h2 {
-			font-weight: bold;
-			font-size: 36px;
 			margin-bottom: 91px;
+			text-align: center;
 		}
-		.line-review {
-			position: relative;
-			&:before {
-				position: absolute;
-				content: "";
-				left: 50%;
-				top: -58px;
-				width: 64px;
-				height: 2px;
-				background-color: $light-blue;
-				margin-left: -32px;
-			}
+		.center-line:before {
+			position: absolute;
+			content: "";
+			left: 50%;
+			top: -58px;
+			width: 64px;
+			height: 2px;
+			background-color: $light-blue;
+			margin-left: -32px;
 		}
 		.swiper-container {
 			width: 100%;
@@ -758,26 +574,14 @@ header, footer {
 .contact-background {
 	background-color: $light-red;
 	.contact-container {
-		padding-top: 90px;
-		padding-bottom: 90px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 0px auto;
-		max-width: 1100px;
-		@media only screen and (max-width : 1152px) {
-			margin: 0px 26px;
-		}
 		color: $white;
 		h2 {
-			font-weight: bold;
-			font-size: 36px;
 			margin-bottom: 50px;
 			@media only screen and (max-width : 460px) {
 				align-self: flex-start;
 			}
 		}
-		p {
+		.center-line {
 			font-size: 14px;
 		}
 		.contact-form {
@@ -795,57 +599,45 @@ header, footer {
 				border-radius: 5px;
 			}
 		}
-		
-		
 	}
 }
 
-	.social {
-		height: 71px;
-		display: flex;
-		align-items: center;
-		@media only screen and (max-width: 780px) {
-			height: auto;
-			margin-top: 18px;
+.social {
+	height: 71px;
+	display: flex;
+	align-items: center;
+	@media only screen and (max-width: 780px) {
+		height: auto;
+		margin-top: 18px;
+	}
+	a {
+	padding-right: 118px;
+	@media only screen and (max-width : 1152px) {
+		padding-right: 60px;
+	}
+	@media only screen and (max-width : 780px) {
+		padding-right: 20px;
+	}
+		&:last-child {
+		padding-right: 0px;
 		}
-		a {
-		padding-right: 118px;
-		@media only screen and (max-width : 1152px) {
-			padding-right: 60px;
-		}
-		@media only screen and (max-width : 780px) {
-			padding-right: 20px;
-		}
-			&:last-child {
-			padding-right: 0px;
-			}
-			img {
-				height: 20px;
-			}
+		img {
+			height: 20px;
 		}
 	}
-	footer .container {
-		@media only screen and (max-width: 690px) {
-				flex-direction: column;
-			}
-		p {
-			color: $white;
-			opacity: 0.5;
-			font-size: 18px;
-		}
+}
+footer .container {
+	@media only screen and (max-width: 690px) {
+		flex-direction: column;
 	}
-
-.container {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 0px auto;
-		max-width: 1100px;
+	p {
 		color: $white;
-		@media only screen and (max-width : 1152px) {
-			margin: 0px 26px;
-		}
+		opacity: 0.5;
+		font-size: 18px;
+	}
 }
+
+
 
 .top {
 	position: fixed;
@@ -854,3 +646,8 @@ header, footer {
 	z-index: 99;
 }
 
+.background-image {
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
