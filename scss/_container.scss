@@ -1,0 +1,107 @@
+.pricing-container {
+	color: $white;
+	h2 {
+		@media only screen and (max-width : 460px) {
+			align-self: flex-start;
+		}
+	}
+	.center-line:before {
+		position: absolute;
+		content: "";
+		left: 50%;
+		top: -27px;
+		width: 64px;
+		height: 2px;
+		background-color: $light-green;
+		margin-left: -32px;
+		@media only screen and (max-width : 460px) {
+			left: 0px;
+			margin-left: 0px;
+		}
+	}
+}
+.inner-container {
+		padding-top: 90px;
+		padding-bottom: 90px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0px auto;
+		max-width: 1100px;
+		@media only screen and (max-width : 1152px) {
+			margin: 0px 26px;
+		}
+		h2 {
+			font-weight: bold;
+			font-size: 36px;
+		}
+		.center-line {
+			font-size: 14px;
+			position: relative;
+		}
+		.price-main {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			width: 100%;
+			@media only screen and (max-width: 966px) {
+				flex-direction: column;
+				align-items: center;
+			}
+			.small-container {
+				margin-top: 83px;
+				text-align: center;
+				width: 343px;
+				border-radius: 5px;
+				overflow: hidden;
+				&:nth-child(2) {
+					margin-right: 40px;
+					margin-left: 40px;
+					@media only screen and (max-width: 966px) {
+						margin-right: 0px;
+						margin-left: 0px;
+				}
+				}
+				
+				h3 {
+					padding-top: 14px;
+					padding-bottom: 14px;
+					margin: 0px;
+					font-size: 20px;
+					background-color: $title-grey;
+					font-weight: normal;
+				}
+				.price {
+					background-color: $title-grey;
+					margin: 0px;
+					font-size: 34px;
+					span {
+						font-size: 90px;
+					}
+				}
+				.price-title {
+					background-color: $title-grey;
+					margin: 0px;
+					padding-bottom: 18px;
+					font-size: 14px;
+				}
+				.price-coment {
+					background-color: $light-green;
+					margin: 0px;
+					min-height: 6px;
+					p {
+						padding: 11px;
+						margin: 0px;
+					}
+				}
+				.product {
+					font-size: 14px;
+					color: $text-grey;
+					background-color: $white;
+					margin: 0px;
+					padding: 11px;
+				}
+			}
+		}
+	}
+}
