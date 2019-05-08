@@ -1008,5 +1008,10 @@ header, footer {
 		}
 }
 
-
+.top {
+	position: fixed;
+	right: 26px;
+	bottom: 71px;
+	z-index: 99;
+}
 
