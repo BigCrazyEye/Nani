@@ -751,11 +751,8 @@ header, footer {
 			margin-bottom: 91px;
 			position: relative;
 		}
-		.swiper-container {
-			width: 100%;
-			height: 100%;
+		.line-review {
 			position: relative;
-			overflow: visible;
 			&:before {
 				position: absolute;
 				content: "";
@@ -766,6 +763,10 @@ header, footer {
 				background-color: #6696E2;
 				margin-left: -32px;
 			}
+		}
+		.swiper-container {
+			width: 100%;
+			height: 100%;
 			.swiper-wrapper {
 				display: flex;
 				align-items: flex-end;
