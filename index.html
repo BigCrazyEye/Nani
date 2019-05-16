@@ -13,7 +13,7 @@
 		<header id="top">
 			<div class="container">
 				<div class="logo"></div>
-				<a href="#" class="icon" onclick="menuIcon()"><img src="image/menu.svg"></a>
+				<a href="javascript:void(0);" class="icon" onclick="menuIcon()"><img src="image/menu.svg"></a>
 				<ul id="nav" class="nav">
 					<li><a href="#explore">Features</a></li>
 					<li><a href="#about">About</a></li>
@@ -37,11 +37,11 @@
 							</div>
 							<div class="form-container moto-form">
 								<h3>Try Your <span>FREE</span> Trial Today</h3>
-								<form>
+								<form id="moto-form">
 									<p>Your detais</p>
 									<input type="text" id="firstName" placeholder="First name">
 									<input type="text" id="latsName"  placeholder="Last name">
-									<input type="tel" id="phoneNumber" placeholder="Phone number">
+									<input minlength="8" maxlength="14" pattern="^(\+)?(\b370|\b8)?(\s)?\d{3}(\s)?\d{5}$" type="tel" id="phoneNumber" placeholder="Phone number">
 									<p>Type of subscription</p>
 									<label for="Monthly" class="customRadio">
 										<input checked="checked" type="radio" name="subscription" id="Monthly">
@@ -54,7 +54,7 @@
 										<span class="checkmark"></span>
 									</label>
 								</form>
-								<div class="button">GET STARTED</div>
+								<div class="button" onclick="submitFunction('moto-form', 'phoneNumber')">GET STARTED</div>
 							</div>
 						</div>
 					</div>
@@ -337,10 +337,10 @@
 						<h2>CONTACT US</h2>
 						<p class="center-line">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						<div class="form-container contact-form">
-							<form>
+							<form id="contact-form">
 								<input type="text" id="contact-firstName" placeholder="First name">
 								<input type="text" id="contact-latsName"  placeholder="Last name">
-								<input type="tel" id="contact-phoneNumber" placeholder="Phone number">
+								<input minlength="8" maxlength="14" pattern="^(\+)?(\b370|\b8)?(\s)?\d{3}(\s)?\d{5}$" type="tel" id="contact-phoneNumber" placeholder="Phone number">
 								<label for="personal" class="customRadio">
 									<input checked="checked" type="radio" name="subscription" id="personal">
 									<span class="text">PERSONAL</span>
@@ -352,7 +352,7 @@
 									<span class="checkmark"></span>
 								</label>
 							</form>
-							<div class="button">SEND</div>
+							<div class="button" onclick="submitFunction('contact-form', 'contact-phoneNumber')">SEND</div>
 						</div>
 					</div>
 				</div>
@@ -372,7 +372,20 @@
 			</div>
 		</footer>
 		
-		<div class="top"><a href="#top"><img src="image/up-arrow.svg"></a></div>
+		<!--<div class="top"><a href="#top"><img src="image/up-arrow.svg"></a></div>-->
+		<div id="errorMessegescontainer">
+			<div id="errorMesseges">
+				<div id="exit" onclick="exitFunction()"></div>
+				<div id="bedPhone">
+					<p>Invalid phone number!</p><br>
+					<p>Please match pattern +370623456789 or 865845954 or 65845954.</p>
+				</div>
+				<div id="emptyValue">
+					<p>Please fill out all fields!</p><br>
+					<p>Red fields - required.</p>
+				</div>
+			</div>
+		</div>
 		<script src="js/script.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 		<script>

@@ -57,6 +57,23 @@
 					margin-top: 60px;
 					margin-left: 0px;
 				}
+				form {
+					@media only screen and (max-width: 950px) {
+						padding: 30px 17px;
+					}
+					@media only screen and (max-width: 690px) {
+						padding: 30px 65px;
+					}
+					input[type="text"], input[type="tel"] {
+						@media only screen and (max-width: 950px) {
+							width: calc(100% - 9px);
+						}
+						@media only screen and (max-width: 690px) {
+							width: 100%;
+						}
+					}
+				}
+				
 			}
 		}
 		}

@@ -1,0 +1,42 @@
+#errorMessegescontainer {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(28, 28, 28, 0.4);
+	z-index: 999;
+}
+
+#errorMesseges {
+	background-color: $white;
+	width: 390px;
+	//height: 160px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	p {
+		font-size: 18px;
+		color: $title-grey;
+		margin: 0px;
+	}
+}
+
+#exit {
+	width: 30px;
+	height: 30px;
+	background-image: url('../image/cancel.svg');
+	margin-bottom: 20px;
+	align-self: flex-end;
+	cursor: pointer;
+}
+
+#emptyValue, #bedPhone {
+	display: none;
+}

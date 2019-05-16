@@ -62,3 +62,41 @@ $('a[href*="#"]')
       }
     }
   });
+  
+function submitFunction(formName, telId) {
+	let form = document.getElementById(formName).getElementsByTagName("INPUT");
+	let emptyValue = 0;
+	let telPhone = document.getElementById(telId);
+	let name = document.getElementById('firstName');
+	if (!name.checkValidity()) {
+		console.log("not ok");
+	}
+	for (let i=0; i<form.length; i++) {
+		let inputValue = form[i].value;
+		if (inputValue=="") {
+			emptyValue += 1;
+			form[i].style.background = "#ffb3b3";
+		} else {
+			emptyValue += 0;
+			form[i].style.background = "#ffffff";
+		}
+	}
+	if (!telPhone.checkValidity()) {
+		document.getElementById('errorMessegescontainer').style.display = "flex";
+		document.getElementById('bedPhone').style.display = "block";
+	} else {
+		if (emptyValue > 0) {
+			document.getElementById('errorMessegescontainer').style.display = "flex";
+			document.getElementById('emptyValue').style.display = "block";
+		}
+		else if (emptyValue == 0){
+			alert("Form submited!");
+		}
+	}
+};
+
+function exitFunction() {
+	document.getElementById('errorMessegescontainer').style.display = "none";
+	document.getElementById('emptyValue').style.display = "none";
+	document.getElementById('bedPhone').style.display = "none";
+}

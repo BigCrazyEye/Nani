@@ -1,0 +1,148 @@
+.explore {
+	max-width: 2000px;
+	margin: 0px auto;
+	.explore-container {
+		width: 100%;
+		background-image: url($explore);
+		@media only screen and (max-width: 966px) {
+			background-size: auto 100%;
+		}
+		.transp {
+			background-image: linear-gradient(270deg, rgba(102, 150, 226, 0.42), rgba(226, 120, 102,0.42));
+			.container {
+				@media only screen and (max-width: 966px) {
+					flex-direction: column;
+				}
+				.explore-tab {
+					margin: 0px;
+					padding: 0px;
+					.tablinks {
+						/*width: 100px;
+						height: 100px;
+						background-color: #A37169;
+						list-style-type: none;
+						text-align: center;
+						line-height: 100px;
+						transition: 0.3s;
+						cursor: pointer;
+						&:not(:last-child) {
+							margin-bottom: 21px;
+						}*/
+						&:hover {
+							background-color: $light-red;
+							color: rgba(255,255,255,1);
+						}
+					}
+				}
+				.tab-content {
+					display: none;
+					align-items: center;
+					@media only screen and (max-width: 966px) {
+						flex-direction: column;
+						align-items: center;
+					}
+					.tab-content-left {
+						margin-left: 54px;
+						margin-right: 54px;
+						@media only screen and (max-width: 966px) {
+							flex-direction: column;
+							text-align: justify;
+							margin-left: 0px;
+							margin-right: 0px;
+						}
+					}
+					.tab-content-right {
+						width: 362px;
+						height: 366px;
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						align-items: center;
+						position: relative;
+						.small:hover:before, .big:hover:before {
+							transition: 0.3s;
+							opacity: 1;
+						}
+						.small:before {
+							position: absolute;
+							content: "Explore";
+							//transform: translateY(-3px) scale(0.905, 0.905);
+							width: 168px;
+							height: 168px;
+							background-color: rgba(226, 120, 102, 0.8);
+							line-height: 168px;
+							text-align: center;
+							font-weight: bold;
+							font-size: 20px;
+							cursor: pointer;
+							opacity: 0;
+						}
+						.big:before {
+							position: absolute;
+							content: "Explore";
+							width: 362px;
+							height: 177px;
+							background-color: rgba(226, 120, 102, 0.8);
+							line-height: 168px;
+							text-align: center;
+							font-weight: bold;
+							font-size: 20px;
+							cursor: pointer;
+							//transform: translateY(-3px) scale(0.955, 0.96);
+							opacity: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#register {
+	display: flex;
+}
+#registerLeft {
+	background-image: url("../image/green.jpg");
+	width: 168px;
+	height: 168px;
+}
+#registerRight {
+	background-image: url("../image/darzoves.jpg");
+	width: 168px;
+	height: 168px;
+}
+#registerBottom {
+	background-image: url("../image/shoes.jpg");
+	width: 362px;
+	height: 177px;
+}
+.tablinks {
+	width: 100px;
+	height: 100px;
+	background-color: #A37169;
+	list-style-type: none;
+	text-align: center;
+	line-height: 100px;
+	transition: 0.3s;
+	cursor: pointer;
+	color: rgba(255,255,255,0.63);
+	font-weight: bold;
+	&:not(:last-child) {
+		margin-bottom: 21px;
+	}
+	.rotated {
+		transform: rotate(-45deg);
+		@media only screen and (max-width: 966px) {
+			transform: rotate(0deg);
+		}
+	}
+	@media only screen and (max-width: 966px) {
+		display: inline-block;
+		height: 50px;
+		line-height: 50px;
+	}
+}
+
+.tablinks.active {
+	background-color: $light-red;
+	color: rgba(255,255,255,1);
+}
