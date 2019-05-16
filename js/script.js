@@ -62,15 +62,22 @@ $('a[href*="#"]')
       }
     }
   });
-  
+
+$(window).scroll(function() {
+		var scrollDistance = $(window).scrollTop();
+		// Assign active class to nav links while scolling
+		$('.section').each(function(i) {
+				if ($(this).position().top <= scrollDistance) {
+						$('.nav li.activeMenu').removeClass('activeMenu');
+						$('.nav li').eq(i).addClass('activeMenu');
+				}
+		});
+}).scroll();
+
 function submitFunction(formName, telId) {
 	let form = document.getElementById(formName).getElementsByTagName("INPUT");
 	let emptyValue = 0;
 	let telPhone = document.getElementById(telId);
-	let name = document.getElementById('firstName');
-	if (!name.checkValidity()) {
-		console.log("not ok");
-	}
 	for (let i=0; i<form.length; i++) {
 		let inputValue = form[i].value;
 		if (inputValue=="") {
@@ -95,6 +102,7 @@ function submitFunction(formName, telId) {
 	}
 };
 
+// close error messege
 function exitFunction() {
 	document.getElementById('errorMessegescontainer').style.display = "none";
 	document.getElementById('emptyValue').style.display = "none";

@@ -62,7 +62,7 @@ header, footer {
 					width: 100%;
 					height: 2px;
 					right: 0px;
-					bottom: -26px;
+					bottom: -2px;
 					@media only screen and (max-width : 690px) {
 						bottom: -5px;
 					}
@@ -84,11 +84,17 @@ header {
 
 .container .nav li {
   display: inline-block;
-  margin: 26px 0px 26px 44px;
+  padding: 26px 0px 24px 0px;
+  margin-left: 44px;
   position: relative;
   text-align: center;
 }
-
+#none {
+	margin: 0px;
+}
+.activeMenu {
+	border-bottom: 2px solid $light-red;
+}
 @media only screen and (max-width: 690px) {
    .container .nav li {
     display: none;
@@ -105,7 +111,8 @@ header {
 	}
 	.nav.phoneMenu li {
 		display: block;
-		margin: 26px 0px;
+		padding: 26px 0px;
+		margin-left: 0px;
 	}
 
 }
