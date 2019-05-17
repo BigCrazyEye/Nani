@@ -40,19 +40,10 @@ header, footer {
 					position: absolute;
 					background-color: $main-black;
 				}
-			li {/*
-				display: inline-block;
-				margin: 26px 0px 26px 44px;
-				position: relative;
-				text-align: center;
-				@media only screen and (max-width : 690px) {
-					display: none;
-				}*/
-				//kazkodel sia dali reikia atskirai parasyti
+			li {
 				a {
 					text-decoration: none;
 					color: $white;
-					opacity: 0.69;
 					font-size: 14px;
 				}
 				&:hover:after {
@@ -67,7 +58,7 @@ header, footer {
 						bottom: -5px;
 					}
 				}
-				&:hover a {
+				&:hover {
 					opacity: 1;
 				}
 			}
@@ -82,29 +73,36 @@ header {
 	z-index: 100;
 }
 
-.container .nav li {
+.nav li {
   display: inline-block;
   margin: 26px 0px 26px 44px;
-  //margin-left: 44px;
   position: relative;
   text-align: center;
+  opacity: 0.69;
+  transition: 0.3s;
 }
+
+.nav li.activeMenu {
+	opacity: 1;
+	&:after {
+		content: "";
+		position: absolute;
+		background-color: $light-red;
+		width: 100%;
+		height: 2px;
+		right: 0px;
+		bottom: -26px;
+		@media only screen and (max-width : 690px) {
+			bottom: -5px;
+		}
+	}
+}
+
 #none {
 	margin: 0px;
 	display: none;
 }
-.activeMenu:after {
-	content: "";
-	position: absolute;
-	background-color: $light-red;
-	width: 100%;
-	height: 2px;
-	right: 0px;
-	bottom: -26px;
-	@media only screen and (max-width : 690px) {
-		bottom: -5px;
-	}
-}
+
 @media only screen and (max-width: 690px) {
    .container .nav li {
     display: none;
