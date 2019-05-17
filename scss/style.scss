@@ -62,7 +62,7 @@ header, footer {
 					width: 100%;
 					height: 2px;
 					right: 0px;
-					bottom: -2px;
+					bottom: -26px;
 					@media only screen and (max-width : 690px) {
 						bottom: -5px;
 					}
@@ -84,16 +84,26 @@ header {
 
 .container .nav li {
   display: inline-block;
-  padding: 26px 0px 24px 0px;
-  margin-left: 44px;
+  margin: 26px 0px 26px 44px;
+  //margin-left: 44px;
   position: relative;
   text-align: center;
 }
 #none {
 	margin: 0px;
+	display: none;
 }
-.activeMenu {
-	border-bottom: 2px solid $light-red;
+.activeMenu:after {
+	content: "";
+	position: absolute;
+	background-color: $light-red;
+	width: 100%;
+	height: 2px;
+	right: 0px;
+	bottom: -26px;
+	@media only screen and (max-width : 690px) {
+		bottom: -5px;
+	}
 }
 @media only screen and (max-width: 690px) {
    .container .nav li {
@@ -111,7 +121,6 @@ header {
 	}
 	.nav.phoneMenu li {
 		display: block;
-		padding: 26px 0px;
 		margin-left: 0px;
 	}
 
@@ -200,6 +209,9 @@ main {
 		background-color: $white;
 		.savybes-container {
 			color: $main-black;
+			h2 {
+				text-align: center;
+			}
 			.center-line {
 				color: $text-grey;
 				&:before {
@@ -211,10 +223,6 @@ main {
 					height: 2px;
 					background-color: $light-red;
 					margin-left: -30px;
-					@media only screen and (max-width : 460px) {
-						left: 0px;
-						margin-left: 0px;
-					}
 				}
 			}
 			.savybes-main {
@@ -262,9 +270,7 @@ main {
 	.pricing-container {
 		color: $white;
 		h2 {
-			@media only screen and (max-width : 460px) {
-				align-self: flex-start;
-			}
+			text-align: center;
 		}
 		.center-line:before {
 			position: absolute;
@@ -275,10 +281,6 @@ main {
 			height: 2px;
 			background-color: $light-green;
 			margin-left: -32px;
-			@media only screen and (max-width : 460px) {
-				left: 0px;
-				margin-left: 0px;
-			}
 		}
 		.price-main {
 			@media only screen and (max-width: 966px) {
